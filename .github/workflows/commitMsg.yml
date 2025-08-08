@@ -1,0 +1,11 @@
+name: "Commit msg show on any branch"
+
+on:
+    push
+
+jobs:
+    commit_msg:
+        runs-on: ubuntu-latest
+        steps:
+            - name: "Show push msg"
+              run: echo "Commit msg"
